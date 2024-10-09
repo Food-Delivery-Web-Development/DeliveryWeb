@@ -18,4 +18,10 @@ async function getResturantById(id: string) {
   return response.data;
 }
 
-export { getResturantById, getResturants };
+async function getProductById(id: string) {
+  const response = await ResturantAPI.get(`/products/${id}`);
+
+  return response.data;
+}
+
+export { getResturantById, getResturants, getProductById };
