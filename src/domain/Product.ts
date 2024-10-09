@@ -5,6 +5,7 @@ type Product = {
   price: number;
   imageUrl: string;
   restaurantId: string;
+  rating: number;
 };
 
 export type { Product };
